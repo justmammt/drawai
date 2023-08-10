@@ -1,5 +1,6 @@
 const { AoiClient, LoadCommands } = require("aoi.js");
 const { Panel } = require("@akarui/aoi.panel");
+require('dotenv').config()
 var fs = require('fs');
 
 const bot = new AoiClient({

@@ -1,0 +1,60 @@
+{
+    "models": [
+        {
+            "model_name": "Norian_VanillaCore",
+            "base_model": "sd-1",
+            "model_type": "main",
+            "path": "/Users/mariopizzano/invokeai/models/sd-1/main/Norian_VanillaCore",
+            "description": "sd-1 main model Norian_VanillaCore",
+            "model_format": "diffusers",
+            "error": null,
+            "vae": null,
+            "variant": "normal"
+        },
+        {
+            "model_name": "stable-diffusion-v1-5",
+            "base_model": "sd-1",
+            "model_type": "main",
+            "path": "/Users/mariopizzano/invokeai/models/sd-1/main/stable-diffusion-v1-5",
+            "description": "Stable Diffusion version 1.5 diffusers model (4.27 GB)",
+            "model_format": "diffusers",
+            "error": null,
+            "vae": null,
+            "variant": "normal"
+        },
+        {
+            "model_name": "uberRealisticPornMerge_urpmv13Inpainting",
+            "base_model": "sd-1",
+            "model_type": "main",
+            "path": "/Users/mariopizzano/invokeai/autoimport/main/uberRealisticPornMerge_urpmv13Inpainting.safetensors",
+            "description": "sd-1 main model uberRealisticPornMerge_urpmv13Inpainting",
+            "model_format": "checkpoint",
+            "error": null,
+            "vae": null,
+            "config": "configs/stable-diffusion/v1-inpainting-inference.yaml",
+            "variant": "inpaint"
+        },
+        {
+            "model_name": "Unreal_V4.1",
+            "base_model": "sd-1",
+            "model_type": "main",
+            "path": "/Users/mariopizzano/invokeai/models/sd-1/main/Unreal_V4.1",
+            "description": "sd-1 main model Unreal_V4.1",
+            "model_format": "diffusers",
+            "error": null,
+            "vae": null,
+            "variant": "normal"
+        },
+        {
+            "model_name": "urpm",
+            "base_model": "sd-1",
+            "model_type": "main",
+            "path": "/Users/mariopizzano/invokeai/models/sd-1/main/urpm",
+            "description": "sd-1 main model urpm",
+            "model_format": "diffusers",
+            "error": null,
+            "vae": null,
+            "variant": "normal"
+        }
+    ]
+}
