@@ -18,7 +18,7 @@ const positiveprompt = "girl"
 const negativeprompt = "realistic"
 
 const request = {
-    "id": randomid,
+    "id": "quelporcacciodidio",
     "graph": {
         "id": "text_to_image_graph",
         "nodes": {
