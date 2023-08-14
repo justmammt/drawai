@@ -1,11 +1,8 @@
-const { AoiClient, LoadCommands } = require("aoi.js");
-const { Panel } = require("@akarui/aoi.panel");
-require('dotenv').config()
-var fs = require('fs');
+const {AoiClient} = require("aoi.js");
 
 const bot = new AoiClient({
     token: process.env.TOKEN,
-    prefix: "i!",
+    prefix: "DISCORD BOT PREFIX",
     intents: ["MessageContent", "Guilds", "GuildMessages"],
     events: ["onMessage"],
     database: {
@@ -18,29 +15,9 @@ const bot = new AoiClient({
         }
     }
 });
-const loader = new LoadCommands(bot);
-loader.load(bot.cmd, "./commands/");
 
-const panel = new Panel({
-    port: 3000,
-    client: bot
-})
-
-panel.loadAPI({
-    auth: " Authentication key here (random string)"//no spaces, keep it only alphanumeric...
-})
-
-panel.loadGUI({
-    username: ["justmammt", "username 2"],
-    password: ["mariop2009", "Password 2"],
-})
-
-bot.status({
-    type: "WATCHING",
-    text: "InvokeAI API - localhost:9090"
-})
+// Ping Command
 bot.command({
     name: "ping",
     code: `Pong! $pingms`
 });
-
