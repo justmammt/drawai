@@ -1,24 +1,17 @@
-const {AoiClient} = require("aoi.js");
-require('dotenv').config()
+const { Client, GatewayIntentBits, MessageActionRow, MessageButton, EmbedBuilder } = require('discord.js');
+require('dotenv').config();
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
-const bot = new AoiClient({
-    token: process.env.TOKEN,
-    prefix: "DISCORD BOT PREFIX",
-    intents: ["MessageContent", "Guilds", "GuildMessages"],
-    events: ["onMessage"],
-    database: {
-        type: "aoi.db",
-        db: require("@akarui/aoi.db"),
-        tables: ["main"],
-        path: "./database/",
-        extraOptions: {
-            dbType: "KeyValue"
-        }
-    }
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
-// Ping Command
-bot.command({
-    name: "ping",
-    code: `Pong! $pingms`
+client.on('interactionCreate', async interaction => {
+  if (!interaction.isChatInputCommand()) return;
+
+  if (interaction.commandName === 'ping') {
+    await interaction.reply('Pong!');
+  }
 });
+
+client.login(process.env.TOKEN);

@@ -1,9 +1,9 @@
 # Automatic1111 Discord Bot
-pre-alpha release, made in aoi.js to focus on api requests 
+d.js discord bot to interact with Automatic1111 API calls
 
 ## Installation
 ``` sh
-npm i aoi.js
+npm i discord.js
 npm i dotenv --save
 ```
 
