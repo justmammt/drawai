@@ -8,6 +8,7 @@ npm i discord.js
 npm i dotenv --save
 ```
 - Create config and .env files
+
 .env
 ```env
 TOKEN = "YOUR DISCORD BOT TOKEN"
