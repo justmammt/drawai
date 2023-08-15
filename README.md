@@ -18,4 +18,11 @@ config.json
   "clientId":"YOUR BOT CLIENT ID"
 }
 ```
-
+- Run deploy-commands.js
+``` sh
+node deploy-commands.js
+```
+- Run bot
+``` sh
+node index.js
+```
